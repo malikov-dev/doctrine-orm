@@ -5,6 +5,12 @@ use Doctrine\ORM\EntityManager;
 
 require_once "vendor/autoload.php";
 
+// след три строчки нужны ток с том случае, если нужно свой класс подключить,
+// расширяющий стандартный getRepository
+require_once "vendor/doctrine/common/lib/Doctrine/Common/ClassLoader.php";
+$classLoader = new \Doctrine\Common\ClassLoader('Repositories', __DIR__);
+$classLoader->register();
+
 // Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true; // тестовый режим
 //$proxyDir = null;
