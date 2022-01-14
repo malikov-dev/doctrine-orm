@@ -1,6 +1,7 @@
 <?php
 /**
-* @Entity @Table(name="books")
+ * @Entity(repositoryClass="\Repositories\BookRepository")
+ * @Table(name="books")
 **/
 class Book {
     /**
