@@ -1,9 +1,9 @@
 <?php
 /**
  * @Entity
- * @Table(name="ds_files_os")
+ * @Table(name="ds_files_type")
  **/
-class DsFilesOsEntity {
+class DsFilesTypeEntity {
 
     /**
      * @Id
@@ -13,7 +13,7 @@ class DsFilesOsEntity {
     protected $id;
 
     /**
-     * @Column(type="string", length=255)
+     * @Column(type="string", length=200)
      */
     protected $title;
 

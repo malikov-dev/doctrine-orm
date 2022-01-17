@@ -18,8 +18,33 @@ class DsFilesEntity {
     protected $name;
 
     /**
-     * @Column(type="smallint", length=2, options={"unsigned":true})
+     * @Column(type="bigint")
+     */
+    protected $version;
+
+    /**
+     * @Column(type="smallint", options={"unsigned":true})
+     */
+    protected $type_id;
+
+    /**
+     * @Column(type="smallint", options={"unsigned":true})
      */
     protected $os_id;
+
+    /**
+     * @Column(type="smallint", options={"unsigned":true})
+     */
+    protected $customer_id;
+
+    /**
+     * @Column(type="string")
+     */
+    protected $path;
+
+    /**
+     * @Column(type="datetime")
+     */
+    protected $created_at;
 
 }

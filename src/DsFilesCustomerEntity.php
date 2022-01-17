@@ -1,9 +1,9 @@
 <?php
 /**
  * @Entity
- * @Table(name="ds_files_os")
+ * @Table(name="ds_files_customer")
  **/
-class DsFilesOsEntity {
+class DsFilesCustomerEntity {
 
     /**
      * @Id
