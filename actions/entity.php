@@ -4,11 +4,11 @@ require "../bootstrap.php";
 // получаем сущность по идентификатору
 //$book = $entityManager->find('\Book', 1);
 $book = $entityManager->getRepository('\Book')->find(1);
-$book = $entityManager->getRepository('\Book')->findBy([ 'id' => 7 ]);
+$book = $entityManager->getRepository('\Book')->findBy([ 'id' => 3 ]);
 $book = $entityManager->getRepository('\Book')->findBy(
     // условия
     [
-        'id' => [7,8],
+        'id' => [2,3],
         //'title' => 'Гарри П'
     ],
     // сортировка
