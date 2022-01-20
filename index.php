@@ -6,6 +6,7 @@
     <a href="/actions/query_builder.php">query_builder</a> - составной запрос<br><br>
 
     <br><br><hr><br><br>
-    <a href="/actions/view_ds_files.php">view_ds_files</a><br><br>
+    <a href="/actions/ds_files_view.php">ds_files_view</a><br><br>
+    <a href="/actions/ds_files_create.php">ds_files_create</a><br><br>
 
 </div>

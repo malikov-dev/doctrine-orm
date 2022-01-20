@@ -17,4 +17,12 @@ class DsFilesOsEntity {
      */
     protected $title;
 
+    public function setTitle ($title) {
+        $this->title = $title;
+    }
+
+    public function getId() {
+        return $this->id;
+    }
+
 }
