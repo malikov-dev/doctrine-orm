@@ -15,12 +15,12 @@ class VinniPuh
     /**
      * @Id
      * @Column(name="vinni_id", type="integer", nullable=false)
-     * @GeneratedValue()
+     * @var int
      */
     protected $vinni_id;
 
     /**
-     * @request @Column(type="string")
+     * @Column(type="string")
      * @var string
      */
     protected $request;
