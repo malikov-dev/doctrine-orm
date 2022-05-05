@@ -1,7 +1,7 @@
 <?php
 /**
  * @Entity
- * @Table(name="ds_ip")
+ * @Table(name="data_blocklist_ip_six")
  **/
 class IpEntity
 {
@@ -9,25 +9,25 @@ class IpEntity
      * @Id
      * @Column(type="integer")
      * @GeneratedValue
+     * @var int
      */
     protected $id;
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", length=50, unique=true)
+     * @var string
      */
-    protected $name;
+    protected $blackIP;
 
-    /**
-     * @Column(type="binary", length=16)
-     */
-    protected $ip;
-
-    public function setName($name) {
-        $this->name = $name;
+    public function setBlackIP($blackIP) {
+        $this->blackIP = $blackIP;
     }
 
-    public function setIp($ip) {
-        $this->ip = "(UNHEX('".$ip."'))";
-        $this->ip = $ip;
+    public function getId() {
+        return $this->id;
+    }
+
+    public function getBlackIP() {
+        return $this->blackIP;
     }
 }

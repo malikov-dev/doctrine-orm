@@ -2,9 +2,9 @@
 require "../bootstrap.php";
 
 $puh = new IpEntity();
-$puh->setName( 'Винни Пух' );
-//$puh->setIp( '44.67.85.126' );
-$puh->setIp( 'FE80:0000:0000:0000:0202:B3FF:FE1E:8329' );
+//$puh->setBlackIP( '55.44.67.85' );
+$puh->setBlackIP( '44.67.85.130' );
+//$puh->setBlackIP( '2001:0db8:85a3:0000:0000:8a2e:0370:7334' );
 
 $entityManager->persist($puh);
 
