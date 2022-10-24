@@ -14,10 +14,10 @@ class VinniEntity
     protected $id;
 
     /**
-     * @Column(type="string", length=50, unique=true)
+     * @Column(type="string", length=50)
      * @var string
      */
-    protected $name;
+    protected $ip;
 
     // vendor/bin/doctrine orm:schema-tool:update --force
 }

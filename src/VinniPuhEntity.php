@@ -20,11 +20,39 @@ class VinniPuh
     protected $vinni_id;
 
     /**
-     * @Column(type="string")
+     * @Column(type="string", length=100)
      * @var string
      */
-    protected $request;
+    protected $name;
 
+    /**
+     * @Column(type="string", length=255)
+     * @var string
+     */
+    protected $email;
 
+    /**
+     * @Column(type="string", length=40)
+     * @var string
+     */
+    protected $phone;
+
+    /**
+     * @Column(type="string", length=100)
+     * @var string
+     */
+    protected $organization;
+
+    /**
+     * @Column(type="string", length=100)
+     * @var string
+     */
+    protected $job;
+
+    /**
+     * @Column(type="string", length=40)
+     * @var string
+     */
+    protected $country;
 
 }
