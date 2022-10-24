@@ -4,4 +4,11 @@
     <a href="/actions/native_query.php">native query</a> - выборка из БД методом native query и DQL<br><br>
     <a href="/actions/entity.php">entity</a> - выборка методами самой Doctrine ORM<br><br>
     <a href="/actions/query_builder.php">query_builder</a> - составной запрос<br><br>
+
+    <br><br><hr><br><br>
+    <a href="/actions/ds_files_view.php">ds_files_view</a><br><br>
+    <a href="/actions/ds_files_create.php">ds_files_create</a><br><br>
+    <a href="/actions/ds_ip_add.php">ds_ip_add</a><br><br>
+    <a href="/actions/ds_ip.php">ds_ip</a><br><br>
+
 </div>
